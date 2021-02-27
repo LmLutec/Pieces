@@ -4,6 +4,11 @@ import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
+
+  const response = await fetch("https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=1", data)
+  const json = await response.json()
+console.log(json)
+
   return (
     <div className="App">
       <header>
