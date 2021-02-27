@@ -5,9 +5,7 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
 
-  const response = await fetch("https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=1")
-  const json = await response.json()
-console.log(json)
+
 
   return (
     <div className="App">
