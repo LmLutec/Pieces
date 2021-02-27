@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "piecesae8a72a0_identitypool_ae8a72a0",
+    "identityPoolName": "pieces47e9614b_identitypool_47e9614b",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "piecesae8a72a0",
-    "userPoolName": "piecesae8a72a0_userpool_ae8a72a0",
+    "resourceNameTruncated": "pieces47e9614b",
+    "userPoolName": "pieces47e9614b_userpool_47e9614b",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,24 +18,22 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
-    ],
-    "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": 30,
-    "userpoolClientWriteAttributes": [
-        "birthdate",
-        "preferred_username",
-        "email"
-    ],
-    "userpoolClientReadAttributes": [
         "birthdate",
         "email",
         "preferred_username"
     ],
-    "userpoolClientLambdaRole": "piecesae8a72a0_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": true,
-    "sharedId": "ae8a72a0",
-    "resourceName": "piecesae8a72a0",
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "pieces47e9614b_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "47e9614b",
+    "resourceName": "pieces47e9614b",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -49,19 +47,17 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ],
+    "triggers": "{}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [],
-    "thirdPartyAuth": false,
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "triggers": "{}",
-    "hostedUI": false,
     "parentStack": {
         "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "authProviders": []
+    "dependsOn": []
 }

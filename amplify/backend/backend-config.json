@@ -1,6 +1,6 @@
 {
   "auth": {
-    "piecesae8a72a0": {
+    "pieces47e9614b": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
