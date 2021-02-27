@@ -1,26 +1,3 @@
-type Sign @model {
-  id: ID!
-  name: String!
-  startDate: String!
-  endDate: String!
-  symbol: String!
-  house: String!
-  planet: String!
-  element: String!
-  quality: String!
-  polarity: String!
-  Dailies: [Daily] @connection
-}
-
-type Daily @model {
-  id: ID!
-  date: String!
-  signID: ID!
-  source: String!
-  content: String!
-  sign: Sign @connection
-}
-
 type Entry @model {
   id: ID!
   private: Boolean!
